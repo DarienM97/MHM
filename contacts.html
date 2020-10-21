@@ -1,0 +1,170 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contacts Us</title>
+
+
+<link href="css/stylecontact.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/flux.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+
+		
+
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				if(!flux.browser.supportsTransitions)
+					alert("Flux Slider requires a browser that supports CSS3 transitions");
+					
+				window.f = new flux.slider('#slider', {
+					pagination: false,
+					controls: false,
+					transitions: ['explode', 'tiles3d', 'bars3d', 'cube', 'turn'],
+					autoplay: true
+				});
+				
+				$('.transitions').click(function(event){
+					event.preventDefault();
+					window.f.next($(event.target).data('transition'), $(event.target).data('params'));
+				});
+			});
+		</script>
+		
+</head>
+
+<body>
+<!--
+<div id="main">
+ -->
+ <script>
+ new WOW().init();
+</script>
+
+<script>$("html").niceScroll(
+		{
+			cursorcolor: '#786427',
+			cursorwidth:'10px',
+			
+					}
+	
+	);</script>
+  
+
+  <div id="container">
+    <div id="socials">
+      <div id="search">
+        <form method="post" name="form1" id="form1">
+          <p id="username">
+            <label for="textfield"><strong>Usernam </strong></label>
+            <input name="textfield" type="text" id="textfield">
+          </p>
+          <p>
+            <label for="password"><strong>Password</strong></label>
+            <input type="password" name="password" id="password2">
+            <strong><a href="www.facebook.com">
+              <input type="button" name="button" id="button" value="Login">
+            </a></strong></p>
+        </form>
+      </div>
+      <div id="icon"><a href="www,facebook.com"><img src="images/social_icon/facebook1.png" width="55" height="55" alt=""/></a> <a href="#"><img src="images/social_icon/twe1.png" width="55" height="55" alt=""/></a> <a href="#"><img src="images/social_icon/yout1.png" width="55" height="55" alt=""/></a></div>
+      <div id="logo"></div>
+    </div>
+    <div id="nav">
+      <ul>
+        <li><a href="index9.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li id="lisub"><a href="#">Our Products</a>
+          <ul id="sub">
+            <li><a href="#">Computer</a></li>
+            <li><a href="#">Consultation</a></li>
+            <li><a href="#">Medical</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+   <div id="slidera">
+     
+     <p>&nbsp;</p>
+     <p id="par" >Contacts Us</p>
+     <div id="slider"><img src="images/Contacts.jpg" width="500" height="250" alt=""/></div>
+     
+     <form enctype="multipart/form-data" id ="form3">
+     <table width="472" border="1">
+        <tbody>
+           <tr>
+             <td width="150" height="35"><label for="textfield2" style="font-weight: bold; font-size: 16px;">Name</label></td>
+             <td width="160"><input type="text" name="textfield2" id="textfield2"></td>
+             <td width="140">&nbsp;</td>
+           </tr>
+           <tr>
+             <td height="31" style="font-weight: bold; font-size: 16px;">Password</td>
+             <td><input type="password" name="password" id="password"></td>
+             <td>&nbsp;</td>
+           </tr>
+           <tr>
+             <td height="31" style="font-weight: bold; font-size: 16px;">Gender</td>
+             <td><input type="radio" name="g" id="radio2" value="radio2">
+               Male</td>
+             <td><input type="radio" name="g" id="radio3" value="radio3">
+               <label for="radio3">Femal</label></td>
+           </tr>
+           <tr>
+             <td height="57" style="font-weight: bold; font-size: 16px;">Massage</td>
+             <td colspan="2"><textarea name="textarea" id="textarea"></textarea></td>
+           </tr>
+           <tr>
+             <td height="31" style="font-weight: bold; font-size: 16px;">Select your city</td>
+             <td colspan="2"><select name="select" id="select">
+               <option>Cairo</option>
+               <option>Alex</option>
+               <option>Sharm</option>
+             </select></td>
+           </tr>
+           <tr>
+             <td height="31" style="font-weight: bold; font-size: 16px;">Upload your photo</td>
+             <td colspan="2"><input type="file" name="fileField" id="fileField"></td>
+           </tr>
+           <tr>
+             <td height="31">&nbsp;</td>
+             <td><input type="reset" name="reset" id="reset" value="Clear"></td>
+             <td><input type="submit" name="submit" id="submit" value="Send"></td>
+           </tr>
+        </tbody>
+       </table>
+     </form>
+   </div>
+    <div id="pic" class="wow fadeInUpBig"><img src="images/001.jpg" width="299" height="400" alt=""/></div>
+    <div id="picmhm" class="wow fadeInRightBig"><img src="images/mhm.jpg" width="300" height="125" alt=""/></div>
+    <div id="question">
+      <p>Do you like My New 
+        
+        Design ?</p>
+      <form id="form2" name="form2" method="post">
+        <p>
+          <input type="radio" name="radio" id="radio" value="radio">
+          yes </p>
+        <input type="radio" name="radio" id="radio" value="radio">
+        Not Bad
+        <input type="button" name="button2" id="button2" value="Vote">
+        <p>
+          <input type="radio" name="radio" id="radio" value="radio">
+          Never Liked </p>
+      </form>
+    </div>
+    <div id="footer"> <span style="font-size: 14px">
+      <marquee style="color: #F5DB99">
+      </marquee>
+    </span>
+      <marquee style="color: #F5DB99">
+      <p>Designed by Darien Mohammed</p>
+      
+		</marquee></div>
+  </div>  
+
+</body>
+</html>
